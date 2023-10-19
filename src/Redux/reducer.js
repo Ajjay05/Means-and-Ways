@@ -1,7 +1,7 @@
 import { ADD_TO_CART } from "./actionTypes";
 
 const InitialState={
-    list:[]
+    List:[]
 }
 
 const Reducer=(state=InitialState, action)=>{
@@ -9,7 +9,7 @@ const Reducer=(state=InitialState, action)=>{
         case ADD_TO_CART:
             const {payload}=action
             return{
-                ...state, list:[...state.list, payload]
+                ...state, List:[...state.List, payload]
             }
         
     
